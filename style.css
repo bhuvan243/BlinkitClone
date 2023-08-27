@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+#navbar {
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #f2f2f2;
+
+}
+.vertical-line {
+    border-left: 2px solid #f2f2f2;
+    height: 60px;
+}
+.location>h5 {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+.location>p {
+    margin: 0px;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
+.my-searchbar {
+
+    padding: 0px 12px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 12px;
+    background: rgb(248, 248, 248);
+    color: rgb(130, 130, 130);
+    height: 50px;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+}
+.my-searchbar>.search-icon{
+    color: black;
+}
+.my-searchbar>.inputbar {
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+::placeholder{
+    font-size: 14px;
+    color:#918b8bbf;
+}
+.login-button{
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+.my-cart {
+    background-color: #0d831e !important;
+    font-family: 'Poppins', sans-serif;
+}
+.my-banners, .product-row {
+    overflow-x: scroll;
+    margin: auto;
+}
+.my-banners>.my-list, .product-row>.my-list {
+    white-space: nowrap;
+}
+.my-list>.banners>img {
+    padding: 10px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.see-all {
+    font-size: 20px;
+    color: rgb(12, 131, 31);
+}
+.my-card {
+    width: 179px;
+    margin-inline: 10px;
+}
+.my-card-time {
+    width: fit-content;
+    padding: 0px 4px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 9px;
+    color: rgb(54, 54, 54);
+    margin-bottom: 4px;
+}
+.my-card-title {
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 13px;
+    width: 100%;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+.my-card-weight{
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin-bottom: 12px;
+}
+.my-card-price {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(31, 31, 31);
+}
+.my-btn {
+    padding-inline: 20px !important;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.useful-links {
+    flex: 2;
+}
+.categories-seeall{
+    flex: 3;
+}
+table{
+    width: 100%;
+}
+td{
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+}
+.row-2 {
+
+}
+.row-2>.copyright-text {
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    width: 30%;
+}
+.row-2>.download-link, .social {
+    display: flex;
+    justify-content: space-between;
+}
+.row-2>.download-link>.social-icon {
+    margin: 0px;
+    padding: 10px;
+    width: 92px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10px;
+}
+.social {
+    display: flex;
+}
+.social-icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10px;
+}
+.row-3 {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: justify;
+    color: rgb(102, 102, 102);
+}
+
+@media screen and (max-width:768px){
+    .location{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .my-searchbar, .login-button, .my-cart{
+        width: 90%;
+    }
+    #navbar, .row-1, .row-2{
+        flex-direction: column;
+    }
+    .hero-section, .vertical-line{
+        display: none;
+    }
+    .useful-links, .categories-seeall{
+        text-align: center;
+    }
+    .copyright-text{
+        width: 90% !important;
+    }
+    .social,.download-link,.categories-seeall, .categories-1, .categories-2, .categories-3, .categories-4, .categories-5{
+        margin-top: 15px;
+    }
+
+}

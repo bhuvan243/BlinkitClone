@@ -73,6 +73,23 @@
     width: 179px;
     margin-inline: 10px;
 }
+.offer-tag{
+    align-items: center;
+    display: flex;
+    white-space: wrap;
+    top: 0px;
+    position: absolute;
+    z-index: 10;
+}
+.offer-tag-text{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 9px;
+    text-align: center;
+    z-index: 20;
+    position: absolute;
+}
+
 .my-card-time {
     width: fit-content;
     padding: 0px 4px;
@@ -100,6 +117,15 @@
     font-size: 12px;
     font-weight: 600;
     color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    line-height: 13px;
+    
+}
+.strike-price {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(130, 130, 130);
 }
 .my-btn {
     padding-inline: 20px !important;
@@ -182,7 +208,7 @@ td{
     #navbar, .row-1, .row-2{
         flex-direction: column;
     }
-    .hero-section, .vertical-line{
+    .hero-section, .vertical-line, .offer-tag{
         display: none;
     }
     .useful-links, .categories-seeall{

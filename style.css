@@ -208,7 +208,7 @@ td{
     #navbar, .row-1, .row-2{
         flex-direction: column;
     }
-    .hero-section, .vertical-line, .offer-tag{
+    .hero-section, .vertical-line{
         display: none;
     }
     .useful-links, .categories-seeall{

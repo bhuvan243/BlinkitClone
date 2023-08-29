@@ -68,16 +68,25 @@
 .see-all {
     font-size: 20px;
     color: rgb(12, 131, 31);
+    font-weight: 500;
+    cursor: pointer;
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
 }
 .my-card {
     width: 179px;
     margin-inline: 10px;
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 3px rgb(198, 192, 192);
 }
 .offer-tag{
     align-items: center;
     display: flex;
     white-space: wrap;
     top: 0px;
+    left: 12px;
     position: absolute;
     z-index: 10;
 }
@@ -99,6 +108,7 @@
     font-size: 9px;
     color: rgb(54, 54, 54);
     margin-bottom: 4px;
+    cursor: pointer;
 }
 .my-card-title {
     color: rgb(31, 31, 31);
@@ -107,11 +117,13 @@
     width: 100%;
     margin-bottom: 6px;
     overflow: hidden;
+    cursor: pointer;
 }
 .my-card-weight{
     font-size: 12px;
     color: rgb(102, 102, 102);
     margin-bottom: 12px;
+    cursor: pointer;
 }
 .my-card-price {
     font-size: 12px;
@@ -120,12 +132,14 @@
     display: flex;
     flex-direction: column;
     line-height: 13px;
+    cursor: pointer;
     
 }
 .strike-price {
     font-size: 12px;
     font-weight: 400;
     color: rgb(130, 130, 130);
+    cursor: pointer;
 }
 .my-btn {
     padding-inline: 20px !important;
@@ -141,15 +155,19 @@
 .categories-seeall{
     flex: 3;
 }
+.see-all-1{
+    font-size: 17px;
+    color: rgb(12, 131, 31);
+    font-weight: 400;
+    cursor: pointer;
+}
 table{
     width: 100%;
 }
 td{
     color: rgb(102, 102, 102);
     font-size: 14px;
-}
-.row-2 {
-
+    cursor: pointer;
 }
 .row-2>.copyright-text {
     color: rgb(102, 102, 102);
@@ -174,6 +192,7 @@ td{
     justify-content: center;
     align-items: center;
     margin-inline: 10px;
+    cursor: default;
 }
 .social {
     display: flex;
@@ -189,12 +208,23 @@ td{
     justify-content: center;
     align-items: center;
     margin-inline: 10px;
+    cursor: pointer;
 }
 .row-3 {
     margin-top: 20px;
     font-size: 14px;
     text-align: justify;
     color: rgb(102, 102, 102);
+}
+
+@media screen and (max-width:1399px){
+    /* for laptop size 1024 width -> paan corner banner size is big */
+    .hero-section{
+        display: none;
+    }
+    #navbar{
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width:768px){
@@ -210,6 +240,9 @@ td{
     }
     .hero-section, .vertical-line{
         display: none;
+    }
+    .my-banners{
+        width: 90vw !important;
     }
     .useful-links, .categories-seeall{
         text-align: center;
